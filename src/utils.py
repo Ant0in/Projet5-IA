@@ -2,7 +2,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple
-from math import exp
 
 
 
@@ -25,7 +24,7 @@ def get_dataset(filepath: str) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.n
         - x_train, y_train, x_test, y_test (np.ndarray): the images and labels for training and testing sets.
     """
 
-    print("Reading dataset...")
+    print("[i] Reading dataset...")
     d = np.loadtxt(filepath, delimiter=",", dtype=str)[1:].astype(np.int64)
     x, y = d[:, 1:], d[:, 0].T
     return x/255., y

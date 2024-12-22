@@ -1,7 +1,9 @@
+
 from typing import List
 import numpy as np
 from tqdm.auto import tqdm
 from src.utils import *
+
 
 
 class AutoEncoder:
