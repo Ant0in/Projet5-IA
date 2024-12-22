@@ -12,7 +12,7 @@ This project implements machine-learning algorithms. For more details, please re
 </p>
 
 
-## Usage
+## Requirements
 
 Make sure you have `Python >= 3.10` installed.
 
@@ -35,7 +35,7 @@ Make sure you have `Python >= 3.10` installed.
    ```
 
 
-## Usage
+## Run the Project
 
 When installed, run the project through the `main.py` file. 
 The main file is located at `Projet5-IA/main.py`.
