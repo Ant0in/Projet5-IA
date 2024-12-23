@@ -22,7 +22,7 @@ class Logger:
         return self._filepath
     
     def getTimestamp(self) -> str:
-        return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        return datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
 
     def writeInFile(self, msg: str) -> None:  
         if not (self.filepath is None):
