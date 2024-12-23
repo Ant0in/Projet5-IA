@@ -6,7 +6,7 @@
 This project implements machine-learning algorithms. For more details, please refer to `./pdf/consignes.pdf`.
 
 <p align="center">
-  <img src="./pdf/numbers.png" alt="intro problem" width="500"/>
+  <img src="./rapport/src/intro.png" alt="intro problem" width="500"/>
   <br/>
   <strong>Autoencoder for numbers with mnist_train.csv dataset for training</strong>
 </p>
