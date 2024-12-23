@@ -8,7 +8,7 @@ This project implements machine-learning algorithms. For more details, please re
 <p align="center">
   <img src="./pdf/numbers.png" alt="intro problem" width="500"/>
   <br/>
-  <strong>Autoencoder for numbers with mnist_train.csv dataset</strong>
+  <strong>Autoencoder for numbers with mnist_train.csv dataset for training</strong>
 </p>
 
 
@@ -35,10 +35,35 @@ Make sure you have `Python >= 3.10` installed.
    ```
 
 
-## Run the Project
+## Usage
 
 When installed, run the project through the `main.py` file. 
 The main file is located at `Projet5-IA/main.py`.
+
+### Required Parameters (positional):
+- The dataset path `dataset_path` which will be used to train the model. Value must be a **string** and a **valid model**.
+
+### Training Parameters (positional, have default values)
+
+For this section, please refer to `./pdf/consignes.pdf` to understand every parameters. Default values are accessibles with the argparser in the `main.py` file.
+
+- **Learning Rate** `learning_rate`. Value must be a **float** between `0` and `1`.
+- **Encoded Dimension** `encoded_dim`. Value must be a **positive integer** (greater than `0`).
+- **Batch size** `batch_size`. Value must be a **positive integer** (greater than `0`).
+- **Epochs** `epochs`. Value must be a **positive integer** (greater than `0`).
+
+
+### Optional parameters : 
+
+- `--verbose`: Enables or disables verbose mode. **Enabled by default**.
+- `--log_path`: Enables logging into a log file @ `log_path`. If no path is given, this will be disabled.
+
+
+### Running Examples:
+
+```bash
+python .\main.py --dataset .\dataset\mnist_train.csv --learning_rate 0.01 --batch_size 32 --epochs 10
+```
 
 
 ## License
