@@ -50,7 +50,7 @@ For this section, please refer to `./pdf/consignes.pdf` to understand every para
 - **Learning Rate** `learning_rate`. Value must be a **float** between `0` and `1`.
 - **Encoded Dimension** `encoded_dim`. Value must be a **positive integer** (greater than `0`).
 - **Batch size** `batch_size`. Value must be a **positive integer** (greater than `0`).
-- **Epochs** `epochs`. Value must be a **positive integer** (greater than `0`).
+- **Epochs** `epochs`. Value must be a **positive integer**.
 
 
 ### Optional parameters : 
